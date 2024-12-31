@@ -1,0 +1,11 @@
+n = input()
+
+max = 0
+
+while n != 0:
+    t = n % 10
+    if t > max:
+        max = t
+    n = n / 10
+
+print(max)

@@ -1,0 +1,12 @@
+n = input()
+
+prime = 1
+i = 2
+
+while (i <= n / 2) && (n % i != 0):
+    i = i + 1
+
+if n > 1 && n % i == 0:
+    print(0)
+else:
+    print(1)

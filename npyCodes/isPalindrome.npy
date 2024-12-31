@@ -1,0 +1,22 @@
+n = input()
+
+n_temp = n
+rev = 0
+n_size = 0
+
+while n_temp != 0:
+    rev = rev * 10 + n_temp % 10
+    n_temp = n_temp / 10
+    n_size = n_size + 1
+
+i = 0
+
+while i < n_size && rev % 10 == n % 10:
+    rev = rev / 10
+    n = n / 10
+    i = i + 1
+
+if n == 0:
+    print(1)
+else:
+    print(0)
